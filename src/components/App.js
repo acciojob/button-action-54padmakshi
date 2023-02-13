@@ -14,9 +14,9 @@ const handleClick = () => {
     <div className="App" id="main">
       // Do not alter the main div
       <button id="click" onClick={handleClick}> CLICK HERE </button>
-      <div className={`msg ${setShowMsg ? false: true}`}>
-       <p id ="para">{msg}</p></div>
-    </div>
+    
+       <p className={showmsg} id ="para">{msg}</p></div>
+   
   );
 }
 
