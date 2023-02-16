@@ -1,11 +1,10 @@
 import React, { useState } from "react";
 import './../styles/App.css';
 
-const App = (props) => {
-const [msg, setMsg] = useState("");
+const App = () => {
 
 const handleClick = () => {
-  setMsg("Hello, I've learnt to use the full-stack evaluation tool. This makes me so happy");
+  document.getElementById("para").className="show";
   
 }
  
@@ -15,9 +14,9 @@ const handleClick = () => {
       // Do not alter the main div
       <button id="click" onClick={handleClick}> CLICK HERE </button>
     
-       <p id ="para">{msg}</p></div>
+       <p id ="para" className="hide">Hello, I've learnt to use the full-stack evaluation tool. This makes me so happy</p></div>
    
   );
 }
 
-export default App
+export default App;

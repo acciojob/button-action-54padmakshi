@@ -3,3 +3,11 @@ p #para{
     
    position: absolute;   
 }
+
+.hide{
+    display: none;
+}
+
+.show{
+    display: block;
+}
